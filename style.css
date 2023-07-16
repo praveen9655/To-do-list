@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+body{
+    background-color: #111b42;
+
+}
+.container{
+    min-height: 100vh;
+    padding: 100px;
+    background-image: url(bg-texture.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+}
+.b1{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    background-color: rgb(228, 228, 228);
+    border-radius: 50px;
+    margin-top: 5px;
+    height: 40px;
+
+}
+.btn button{
+    border: 0;
+    background-color: #ff3e03;
+    padding: 5px;
+    color: #fff;
+    border-radius: 50px;
+    height: 40px;
+    width: 70px;
+}
+.btn input{
+    border: 0;
+    background: transparent;
+    padding: 10px;
+    border-radius: 50px;
+    outline: none;
+    height: 40px;
+}
+ul li {
+   background: transparent;
+    list-style: none;
+    padding: 12px 8px 20px 50px;
+    user-select: none;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    height: 18px;
+    width: 18px;
+    content: '';
+    position: absolute;
+    border-radius:50% ;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 15px;
+    left: 8px;
+}
+
+ul li.checked1{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked1::before{
+    background-image: url(checked.png);
+}
+span{
+    position: absolute;
+    right: 0;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    font-size: 22px;
+    counter-reset: #555;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background-color: #cecece;
+
+}
+@media (max-width : 900px) {
+    .container{
+        min-height: 100vh;
+        background-image: url(bg-texture.png);
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .main{
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .btn{
+        background-color: rgb(228, 228, 228);
+        border-radius: 50px;
+        margin-top: 5px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .btn button{
+        border: 0;
+        background-color: #ff3e03;
+        padding: 5px;
+        color: #fff;
+        border-radius: 50px;
+        height: 40px;
+        width: 70px;
+    }
+    .btn input{
+        border: 0;
+        background: transparent;
+        padding: 10px;
+        border-radius: 50px;
+        outline: none;
+        height: 40px;
+        width: 250px;
+    }
+}
